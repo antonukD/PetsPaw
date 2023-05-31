@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import voiting from '../../../images/vote-table.svg'
 import breeds from '../../../images/pet-breeds.svg'
 import gallery from '../../../images/images-search.svg'
-import './PagesImg.css'
 
 const ImageMap = {
   voiting: voiting,
@@ -13,23 +12,25 @@ const ImageMap = {
 
 function AppButton(props) {
   const text = props.text.toLowerCase()
-  // TODO: rewrite to switch / object
-  // avoid magic strings
-
-  // if (text === 'voitin') {
-  //   imageSrc = voiting
-  // } else if (text === 'breeds') {
-  //   imageSrc = breeds
-  // } else if (text === 'gallery') {
-  //   imageSrc = gallery
-  // }
 
   return (
-    <Link to={`${text}`}>
-      <button className={text}>
-        <img src={ImageMap[text]} alt={text} />
+    <NavLink to={`${text}`}>
+      <button
+        className={`${
+          text === 'voiting'
+            ? 'bg-link-color-b'
+            : text === 'breeds'
+            ? 'bg-link-color-g'
+            : 'bg-link-color-y'
+        } rounded-3xl flex items-center justify-center relative self-end  w-36 h-52 border-4  border-white/60 hover:border-white hover:border-solid focus:border-active-border `}
+      >
+        <img
+          src={ImageMap[text]}
+          alt={text}
+          className=" bg-cover w-auto h-auto"
+        />
       </button>
-    </Link>
+    </NavLink>
   )
 }
 
