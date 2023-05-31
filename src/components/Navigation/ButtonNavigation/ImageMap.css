@@ -1,0 +1,25 @@
+.likeImg {
+  @apply w-16 h-16 left-255 top-485 bg-white rounded-lg border-none ml-5 mr-5;
+}
+
+.likeImg:hover {
+  @apply bg-pink-200;
+}
+
+.likeImg:active {
+  @apply bg-red-500;
+}
+
+.image:active {
+  @apply invert-0;
+}
+
+.image {
+  @apply h-8 w-8;
+}
+
+.smile .image,
+.like_navigation .image,
+.sad_smile .image {
+  @apply h-8 w-8;
+}
