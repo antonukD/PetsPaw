@@ -22,7 +22,7 @@ function AppButton(props) {
             : text === 'breeds'
             ? 'bg-link-color-g'
             : 'bg-link-color-y'
-        } rounded-3xl flex items-center justify-center relative self-end  w-36 h-52 border-4  border-white/60 hover:border-white hover:border-solid focus:border-active-border `}
+        } rounded-[20px] flex items-center  justify-center relative self-end  w-36 h-52 border-4  border-white/60 hover:border-white hover:border-solid focus:border-[#FBE0DC] dark:hover:border-solid dark:focus:border-[#FBE0DC]`}
       >
         <img
           src={ImageMap[text]}

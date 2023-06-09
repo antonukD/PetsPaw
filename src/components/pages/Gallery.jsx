@@ -1,4 +1,4 @@
-import TopSerchAndContant from '../Navigation/TopSerchAndContant'
+import TopSerchAndContant from '../Navigation/TopSearchAndContent'
 
 const Gallery = () => {
   return (

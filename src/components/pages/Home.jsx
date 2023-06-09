@@ -1,11 +1,11 @@
-import girlAndPat from '../../images/girl-and-pet.svg'
+import girlAndPat from '../../images/girl-and-pet.png'
 
 const Home = () => {
   return (
-    <div className="  col-start-7 p-5 col-span-6 z-30">
-      <div className=" relative w-full h-full  rounded-2xl bg-img-color">
+    <div className="hidden lg:block lg:relative lg:col-start-7 lg:col-span-6 z-50">
+      <div className="m-10 h-[80%] rounded-2xl bg-img-color dark:bg-[#282828]">
         <img
-          className="absolute inset-0  w-full h-full object-cover scale-110 "
+          className=" absolute h-screen w-screen object-cover inset-0  scale-110"
           src={girlAndPat}
           alt="girl-and-pet"
         />
