@@ -12,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App dark">
+        <body className='bg-page-color dark:bg-[#1D1D1D] '>
         <Routes>
           <Route path="/" element={<MaineLayouts />}>
             <Route index element={<Home />} />
@@ -20,7 +21,8 @@ function App() {
             <Route path="voiting" element={<Voiting />} />
             <Route path="*" element={<NotFound />} />
           </Route>
-        </Routes>
+        </Routes> 
+        </body>
       </div>
     </BrowserRouter>
   );

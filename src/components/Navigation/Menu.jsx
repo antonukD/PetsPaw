@@ -9,7 +9,7 @@ const Menu = () => {
     <>
       <div className="flex justify-between mt-8 w-full">
         <Link to={'/'} className="flex">
-          <img className="" src={paw} alt="logo" />
+          <img src={paw} alt="logo" />
           <img
             src={logoText}
             alt="logo_text"

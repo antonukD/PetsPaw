@@ -4,8 +4,7 @@ import PagesText from './ButtonNavigation/PagesText'
 const Sandwich = () => {
   return (
     <>
-      <div className="flex justify-between">
-        <ImageMap text="sandwich" />
+      <div className="flex justify-end">
         <ImageMap text="close" />
       </div>
       <div className="flex flex-col md:flex-row items-center  justify-between ">
