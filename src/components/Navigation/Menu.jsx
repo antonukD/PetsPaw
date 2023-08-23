@@ -1,21 +1,22 @@
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import PagesImg from './ButtonNavigation/PagesImg'
 import PagesText from './ButtonNavigation/PagesText'
 import paw from '../../images/paw.svg'
 import logoText from '../../images/logo-text.svg'
+import Home from '../pages/Home'
 
-const Menu = () => {
+const Menu = ({ setShowComponent }) => {
   return (
     <>
       <div className="flex justify-between mt-8 w-full">
-        <Link to={'/'} className="flex">
+        <button className="flex" onClick={() => setShowComponent(Home)}>
           <img src={paw} alt="logo" />
           <img
             src={logoText}
             alt="logo_text"
             className="ml-2 dark:filter dark:brightness-0 dark:invert"
           />
-        </Link>
+        </button>
       </div>
 
       <div className=" flex w-full h-screen  ">
@@ -29,14 +30,14 @@ const Menu = () => {
           </p>
           <div className="mt-5">
             <div className="hidden md:flex md:items-center md:justify-center md:space-x-3">
-              <PagesImg text="VOITING" />
-              <PagesImg text="BREEDS" />
-              <PagesImg text="GALLERY" />
+              <PagesImg text="VOITING" setShowComponent={setShowComponent} />
+              <PagesImg text="BREEDS" setShowComponent={setShowComponent} />
+              <PagesImg text="GALLERY" setShowComponent={setShowComponent} />
             </div>
             <div className="flex flex-col md:flex-row items-center  justify-between ">
-              <PagesText text="VOITING" />
-              <PagesText text="BREEDS" />
-              <PagesText text="GALLERY" />
+              <PagesText text="VOITING" setShowComponent={setShowComponent} />
+              <PagesText text="BREEDS" setShowComponent={setShowComponent} />
+              <PagesText text="GALLERY" setShowComponent={setShowComponent} />
             </div>
           </div>
         </div>

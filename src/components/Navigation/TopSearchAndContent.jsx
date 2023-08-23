@@ -1,10 +1,10 @@
 import SearchLine from './ButtonNavigation/SearchLine.jsx'
 import ImageMap from './ButtonNavigation/ImageMap.jsx'
 
-const TopSearchAndContent = () => {
+function TopSearchAndContent() {
   return (
     <div className="hidden lg:block lg:relative w-full h-screen lg:col-start-7 lg:mt-8 lg:col-span-6">
-      <div className=" flex flex-nowrap justify-end space-evenly flex-row mr-8 ">
+      <div className="flex flex-nowrap justify-end space-evenly flex-row mr-8 ">
         <div className="hidden lg:block grow">
           <SearchLine />
         </div>
